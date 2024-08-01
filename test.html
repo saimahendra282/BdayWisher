@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Gift</title>
+<link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <div id="merrywrap" class="merrywrap">
+    <canvas id="snowfall"></canvas>
+    <div class="giftbox">
+      <div class="cover">
+        <div id="clickMe"></div>
+      </div>
+      <div class="box"></div>
+    </div>
+  </div>
+  <video id="bg-video" muted autoplay loop>
+    <source src="fire2.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <audio id="backgroundMusic" src="bdaysung.mp3" loop></audio>
+     
+  <script>
+    // Function to play music
+    function playMusic() {
+      const music = document.getElementById('backgroundMusic');
+      music.play().catch(error => {
+        console.log('Playback error:', error);
+      });
+    }
+
+    // Event listener for user interaction
+    document.addEventListener('click', function() {
+      
+      playMusic();
+      alert("We have a small present for you open it Master");
+
+      // Remove the event listener after the first click to prevent multiple alerts
+      document.removeEventListener('click', arguments.callee);
+    });
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>

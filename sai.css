@@ -1,0 +1,47 @@
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+button {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+p {
+	margin-top: 30px;
+  margin-left:450px;
+	position: absolute;
+	font: 16px Verdana;
+  font-size:20px;
+	color: purple;
+	height: 25px;
+	top: calc( 100vh - 30px );
+	text-shadow: 0 0 2px white;
+}
+p a {
+	text-decoration: none;
+	color: #aaa;
+}
+span {
+	font-size: 11px;
+}
+p > a:first-of-type {
+	font-size: 20px;
+}
+
+body{
+  text-align:center;
+}
